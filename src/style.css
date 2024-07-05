@@ -1,15 +1,91 @@
-*{
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: 18px;
+    display: block;
+    background-image: url(../assets/Backgrundo-pag3.jpg) ;
+    background-size:cover;
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu{
+margin: auto;
+display: none;
+position: absolute;
+height: 100%;
+width: 16%;
+background-color: #333;
+
+}
+
+input[type="checkbox"]:checked ~ div {
+    display: block;
+}
+.botoes-menu{ 
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.botoes-menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 5px;
+    display: block;
+    width: 100%;
+
+}
+
+.botoes-menu a:hover{
+    color: #333333;
+    background: #c4c4c4;
+    font-weight: 600;
     
 }
 
-.imagem-menu{
-    display: flex;
-    width: 100%;
-    align-items: center;
+.botoes-menu li{
+    padding-bottom: 10px;
+    text-align: center;
 }
+
+.x{ 
+    position: relative;
+    padding: 22px;
+    left:  80%;
+    color: #e0e0e0;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+   
+}
+.hambuguer{
+    position: absolute;
+    padding-top: 10px;
+    display: flex;
+    height: 45px;
+}
+
+.logo{ 
+    display: flex;
+    padding-top: 10px;
+}
+
+#logo{
+    display: flex;
+    height: 50px;
+    padding-left: 650px;
+
+}
+
 
 .inicio{
     display: flex;
@@ -20,17 +96,9 @@
     height: 100%;
 }
 
-
-.inicio, .sevicos, .contato{
-    background-image: url(../assets/Backgrundo-pag3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 #video{
 display: flex;
-position: relative;
-padding-top: 30px;
+padding-bottom: 90px;
 height: 500px;
 margin: 0 auto;
 }
