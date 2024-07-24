@@ -8,8 +8,8 @@
 
 body{
     display: block;
-    background-image: url(../assets/Backgrund-3.jpg) ;
-    background-size:cover;
+    background-image: url(../assets/Backgrund-2.jpg) ;
+    background-size: contain;
 }
 ul{
     list-style: none;
@@ -67,14 +67,13 @@ input[type="checkbox"]:checked ~ div {
 .cabecalho{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(43, 43, 43, 0.925);
    
 }
 .hambuguer{
     position: absolute;
     padding-top: 7PX;
     padding-left: 5px;
-    display: flex;
     height: 45px;
 }
 
@@ -92,13 +91,12 @@ input[type="checkbox"]:checked ~ div {
 
 .corpo-site{
     display: grid;
-    min-height: 270vh;
     
 }
 
 .inicio{
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -108,7 +106,7 @@ input[type="checkbox"]:checked ~ div {
 #video{
     display: flex;
     width: 900px;
-    padding-bottom: 90px;
+    padding-top: 120px;
     height: 500px;
     margin: 0 auto;
     border-radius: 10px;
@@ -117,17 +115,118 @@ input[type="checkbox"]:checked ~ div {
 .sobre{
     position: relative;
     display: flex;
-    top: 200px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 55%;
+    top: 190px;
+    padding: 100px 20px;
+    background-image: linear-gradient(to bottom, black, rgba(28, 103, 201, 0.952) );
+    height: 100%;
     margin: auto;
+    min-height: 70vh;
 }
 .sobre p{
     display: flex;
     margin: auto;
-    color: #fff;
+    color: #ffffff;
+    padding: 80px 20px;
+    background-color: rgba(0, 0, 0, 0.200);
+    border-radius: 20px;
+    width: 80%;
     align-items: center;
     text-align: center;
     font-size: 25px;
+}
+
+.servicos{
+    padding-top: 200px;
+    display: grid;
+    position: relative;
+    top: 390px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    grid-template-columns: 220px 390px 200px;
+    grid-auto-rows: 280px;
+    background-image: url(../assets/Backgrund-3.jpg) ;
+    background-size: cover;
+    
+}
+
+.botao-servicos{
+    position: relative;
+   
+    display: flex;
+    bottom: 145px;
+    height: 43px;
+    border-color: #fff;
+    border-radius: 10px;
+    background-color: #0082fc;
+    cursor: pointer;
+}
+
+.botao-servicos:hover{
+    background-color: #fff;
+}
+
+
+#Botao-telefonia{
+    left: 45px;
+    width: 50%;
+}
+
+#Botao-voip{
+    left: 148px;
+    width: 20%;
+}
+
+#Botao-controle{
+    left: 45px;
+    width: 90%;
+}
+
+
+#Botao-cftv{
+    left: 60px;
+    width: 35%;
+}
+
+#Botao-rede{
+    left: 150px;
+    width: 17%;
+}
+#Botao-help{
+    left: 65px;
+    width: 70%;
+}
+
+
+#Telefonia{
+    width: 215px;
+    height: 250px;
+}
+
+#Voip{
+    padding-left: 15px;
+    width: 90%;
+    height: 250px;
+}
+
+#Controle-de-acesso{
+    width: 275px;
+    height: 250px;
+}
+
+#CFTV{
+    width: 215px;
+    height: 250px;
+}
+
+#Rede{
+    width: 90%;
+    padding-left: 15px;
+    height: 250px;
+}
+
+#Help-desk{
+    height: 250px;
 }
