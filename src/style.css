@@ -242,10 +242,9 @@ input[type="checkbox"]:checked ~ div {
     position: relative;
     padding-top: 200px;
     width: 100%;
-    top: 380px;
-    min-height: 100vh;
-    background-image: linear-gradient(rgb(12, 124, 253), #000000) ;
-    background-size: cover;
+    top: 390px;
+    min-height: 140vh;
+    background-image: linear-gradient(rgb(38, 113, 199), #000000) ;
 }
 
 .logos-clientes{
@@ -254,9 +253,50 @@ input[type="checkbox"]:checked ~ div {
     padding: 40px 260px;
 }
 
-#sabara{
-    margin: 10px;
+.botao-clientes{
+    margin: 20px;
+    border-radius: 5px;
 }
-#Aeasp{
-    margin: 10px;
+
+.botao-clientes:hover{
+    cursor: pointer;
+}
+
+#Promocional{
+    margin: 5px 50px;
+}
+
+#USP{
+    margin: 5px 25px;  
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.contato{
+    display: grid;
+    position: relative;
+    top: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#Titulo-form{
+    margin: 60px 150px;
+    color: #fff;
+    font-size: 60px;    
+}
+
+.titulos-input{
+    color: #fff;
+    font-size: 25px;
+}
+
+.input-form{
+   width: 400px;
+}
+
+.botao-contato{
+  margin-left: 490px;
 }
