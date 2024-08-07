@@ -1,96 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root{
+    --menu-size: 250px;
+}
+
 *{
     margin: 0;
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: 0;
 }
 
 body{
-    display: block;
+    overflow-x: hidden;
     background-image: url(../assets/Backgrund-2.jpg) ;
     background-size: contain;
 }
+
 ul{
-    list-style: none;
     padding-inline-start: 0;
 }
 
-input[type="checkbox"] {
-    display: none;
+
+.cabecalho{
+    background-color: #2e2e2ecc;
 }
 
 .menu{
-    margin: auto;
-    display: none;
-    position: absolute;
+    position: fixed;
+    width: var(--menu-size);
     height: 100%;
-    width: 16%;
-    background-color: #333;
+    top: 0;
+    background-color: #2e2e2e;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
 
 }
 
-input[type="checkbox"]:checked ~ div {
+.menu ul li{
     display: block;
 }
-.botoes-menu{ 
-    list-style: none;
-    margin-right: 10px;
-    margin-top: 20px;
-    
-}
 
-.botoes-menu li{
-    position: relative;
-    padding-bottom: 10px;
-    text-align: center;
-    display: inline;
-    
-
-}
-.botoes-menu li a{
-    text-decoration: none;
+.menu ul li a{
     color: #fff;
-
-    padding: 20px 5px;
-    width: 100%;
-    height: 100%;
+    font-size: 19px;
+    text-decoration: none;
 }
-.botoes-menu li a:hover{
+
+.menu ul li a:hover{
     background-color: #fff;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 
-
-.x{ 
-    position: relative;
-    padding: 22px;
-    left:  80%;
-    color: #e0e0e0;
-    cursor: pointer;
+#botao-fechar{
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
 }
 
-.cabecalho{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(43, 43, 43, 0.925);
-   
+#botao-fechar:active{
+    background-color: #ff0000;
 }
+
 .hambuguer{
-    position: absolute;
+    position: fixed;
+
     padding-top: 7PX;
-    padding-left: 5px;
+    padding-left: 10px;
     height: 45px;
     cursor: pointer;
 }
 
+.effect{
+    transition: magin .4s;
+}
+
 .logo{ 
-    display: flex;
+    display: block;
     padding-top: 7px;
 }
 
 #logo{
-    display: flex;
+    display: block;
     height: 50px;
     padding-left: 650px;
 
@@ -112,7 +109,7 @@ input[type="checkbox"]:checked ~ div {
 
 #video{
     display: flex;
-    width: 900px;
+    width: 65%;
     padding-top: 120px;
     height: 500px;
     margin: 0 auto;
@@ -249,12 +246,11 @@ input[type="checkbox"]:checked ~ div {
 
 .logos-clientes{
     width: 80%; 
-    margin: auto;
-    padding: 40px 260px;
+    padding: 40px 210px;
 }
 
 .botao-clientes{
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
 }
 
@@ -276,6 +272,7 @@ input[type="checkbox"]:checked ~ div {
     display: grid;
     position: relative;
     top: 500px;
+    padding-bottom: 160px;
     width: 100%;
     align-items: center;
     justify-content: center;

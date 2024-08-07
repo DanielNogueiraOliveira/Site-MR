@@ -2,42 +2,43 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>MR Informatica</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    <link rel="preload" href="./style.css" as="style">
+    <link rel="preload" href="./index.js" as="script">
+  
 </head>
 <body>
     <header class="cabecalho">
         <div class="menu-logo">
             
-            <input type="checkbox" id="chec">
-            <label for="chec"><img class="hambuguer" src="../assets/hamburguer icon.png" alt="Menu_hambuguer"></label>
-            <div class="menu">
-                <nav class="botoes-menu">
-                    <!---colocar a função de navegação nas opções do menu-->
-                    <label for="chec" class="x">X</label>
-                    <ul>
-                        <li><a id="inicio" href="#">Inicio</a></li>
-                        <li><a id="sobre" href="#">Sobre</a></li>
-                        <li><a id="servicos" href="#">Serviços</a></li>
-                        <li><a id="clientes"href="#">Clientes</a></li>
-                        <li><a id="contatos" href="#">Contatos</a></li>
-                    </ul>
-                </nav>
+            <label for=""><img class="hambuguer" id="hambuguer" src="../assets/hamburguer icon.png" alt="Menu_hambuguer"></label>
+            
+            
+            <div class="logo">
+                <img src="../assets/Logo_MR_Rualonga_desenho.png" alt="logo" id="logo">    
             </div>
-
-         
-        <div class="logo">
-        <img src="../assets/Logo_MR_Rualonga_desenho.png" alt="logo" id="logo">    
+            
         </div>
-
-     </div>
-
+        
     </header>
+    <div id="menu" class="menu effect">
+        <nav class="botoes-menu" > <!---->
+            <!---colocar a função de navegação nas opções do menu-->
+            <button id="botao-fechar">X</button>
+            <ul>
+                <li><a class="links-menu" id="inicio" href="#incio">Inicio</a></li>
+                <li><a class="links-menu" id="sobre" href="#sobre">Sobre</a></li>
+                <li><a class="links-menu" id="servicos" href="#servicos">Serviços</a></li>
+                <li><a class="links-menu" id="clientes"href="#clientes">Clientes</a></li>
+                <li><a class="links-menu" id="contatos" href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </div>
     
 <div class="corpo-site">
-        <div class="inicio">
+        <div id="inicio" class="inicio">
             
             <iframe src="https://www.youtube.com/embed/fgDxQ_WCXqA?si=OOQfglcOhZMvSwLy" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     
@@ -48,14 +49,14 @@
         
 <div></div>
    
-    <div class="sobre"> 
+    <div id="sobre" class="sobre"> 
         <p>A MR Rualonga é uma empresa no segmento de Tecnologia, Informática, Telefonia e controle de acesso.
             Atua na prestação de serviços, venda de suprimentos e equipamentos para soluções de empresas dos mais variados segmentos.
             Nossos serviços é de acordo com a necessidade do cliente, busca parcerias reais e duradouras para maior integração.</p>
     </div>
     <!--Colocar as telas com as informações dos serviços da MR-->
 
-  <div class="servicos">
+  <div id="servicos" class="servicos">
     <div>
         <img id="Telefonia" src="/assets/Telefonia.jpg" alt="Telefonia">
         <input type="button" id="Botao-telefonia" class="botao-servicos" value="Telefonia">
@@ -83,7 +84,7 @@
     </div>
 
 
-    <div class="clientes">
+    <div id="clientes" class="clientes">
         <div class="logos-clientes">
             <img src="/assets/Sabara.jpg" alt="" class="botao-clientes">
             <img src="/assets/Aeasp.jpg" alt=""  class="botao-clientes">
@@ -99,7 +100,7 @@
 
 
 
-    <div class="contato">
+    <div id="contato" class="contato">
         <div class="Form-Contato">
             <h1 id="Titulo-form">Contate-nos</h1>
             <form id="Form" action="">
@@ -116,7 +117,7 @@
                             <th class="titulos-input">E-mail&nbsp;&nbsp;</th>
                             <td>
                                 <input type="hidden" name="wb_input_1" value="E-mail">
-                                <input type="text" class="input-form" value name="wb_input_1" required>
+                                <input type="email" class="input-form" value name="wb_input_1" required>
                             </td></tr>
                         <tr>
                             <th class="titulos-input">Mensagem&nbsp;&nbsp;</th>
@@ -139,6 +140,7 @@
     </div> 
 </div>
 
+<script src="./index.js"></script>
 <!--<footer>
     <a href="mrrualonga.com.br">mrrualonga.com.br</a>
 </footer>!-->
