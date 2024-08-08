@@ -17,7 +17,7 @@
             
             
             <div class="logo">
-                <img src="../assets/Logo_MR_Rualonga_desenho.png" alt="logo" id="logo">    
+               <a href="#sobre"><img src="../assets/Logo_MR_Rualonga_desenho.png" alt="logo" id="logo"></a>     
             </div>
             
         </div>
@@ -26,19 +26,19 @@
     <div id="menu" class="menu effect">
         <nav class="botoes-menu" > <!---->
             <!---colocar a função de navegação nas opções do menu-->
-            <button id="botao-fechar">X</button>
+           <label for=""><img id="botao-fechar" src="../assets/x.png" alt="Fechar"></label>
             <ul>
-                <li><a class="links-menu" id="inicio" href="#incio">Inicio</a></li>
-                <li><a class="links-menu" id="sobre" href="#sobre">Sobre</a></li>
-                <li><a class="links-menu" id="servicos" href="#servicos">Serviços</a></li>
-                <li><a class="links-menu" id="clientes"href="#clientes">Clientes</a></li>
-                <li><a class="links-menu" id="contatos" href="#contatos">Contatos</a></li>
+                <li><a class="links-menu" href="#inicio">Inicio</a></li>
+                <li><a class="links-menu" href="#sobre">Sobre</a></li>
+                <li><a class="links-menu" href="#servicos">Serviços</a></li>
+                <li><a class="links-menu" href="#clientes">Clientes</a></li>
+                <li><a class="links-menu" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </div>
     
 <div class="corpo-site">
-        <div id="inicio" class="inicio">
+        <div id="inicio" class="inicio pagina">
             
             <iframe src="https://www.youtube.com/embed/fgDxQ_WCXqA?si=OOQfglcOhZMvSwLy" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     
@@ -49,58 +49,66 @@
         
 <div></div>
    
-    <div id="sobre" class="sobre"> 
-        <p>A MR Rualonga é uma empresa no segmento de Tecnologia, Informática, Telefonia e controle de acesso.
-            Atua na prestação de serviços, venda de suprimentos e equipamentos para soluções de empresas dos mais variados segmentos.
-            Nossos serviços é de acordo com a necessidade do cliente, busca parcerias reais e duradouras para maior integração.</p>
+    <div id="sobre" class="sobre pagina"> 
+        <p>A MR Rualonga é uma empresa no segmento de Tecnologia, Informática e Telefonia,
+            Atua na prestação de serviços, venda de suprimentos e equipamentos para soluções
+            de empresas dos mais variados segmentos. Nossos serviços é de acordo com a
+            necessidade do cliente, busca parcerias reais e duradouras para maior integração. <br>
+             Contamos com uma equipe de profissionais altamente qualificada e preparada
+            para atender as instalações de grande e pequeno porte. Implantação, atualização
+            e suporte de softwares, visando sempre atender as necessidades dos nossos
+            parceiros, agregando inteligência, competitividade e qualidade aos negócios.
+            Certamente atenderá as necessidades de comunicação de sua empresa.</p>
     </div>
     <!--Colocar as telas com as informações dos serviços da MR-->
 
-  <div id="servicos" class="servicos">
+  <div id="servicos" class="servicos pagina">
     <div>
         <img id="Telefonia" src="/assets/Telefonia.jpg" alt="Telefonia">
-        <input type="button" id="Botao-telefonia" class="botao-servicos" value="Telefonia">
+        <input type="button" id="Botao-telefonia" class="botao-servicos" value="Telefonia" onclick="abrirModal('vis-modal')">
+        
     </div>
     <div>
         <img id="Voip" src="/assets/Voip.jpg" alt="">
-        <input type="button" id="Botao-voip" class="botao-servicos" value="Voip">
+        <input type="button" id="Botao-voip" class="botao-servicos" value="Voip" onclick="abrirModal('vis-modal')">
+    
     </div>
     <div>
         <img id="Controle-de-acesso" src="/assets/Controle-de-acesso.jpg" alt="">
-        <input type="button" id="Botao-controle" class="botao-servicos" value="Controle-de-acesso">
+        <input type="button" id="Botao-controle" class="botao-servicos" value="Controle-de-acesso" onclick="abrirModal('vis-modal')">
     </div>
     <div>
         <img id="CFTV" src="/assets/CFTV.jpg" alt="">
-        <input type="button" id="Botao-cftv" class="botao-servicos" value="CFTV">
+        <input type="button" id="Botao-cftv" class="botao-servicos" value="CFTV" onclick="abrirModal('vis-modal')">
     </div>
     <div>
         <img id="Rede" src="/assets/Rede.jpg" alt="">
-        <input type="button" id="Botao-rede" class="botao-servicos" value="Rede">
+        <input type="button" id="Botao-rede" class="botao-servicos" value="Rede" onclick="abrirModal('vis-modal')">
+
     </div>
     <div>
         <img id="Help-desk" src="/assets/Help-desk-service.jpg" alt="">
-        <input type="button" id="Botao-help" class="botao-servicos" value="Help-desk">
+        <input type="button" id="Botao-help" class="botao-servicos" value="Help-desk" onclick="abrirModal('vis-modal')">
     </div>
     </div>
 
 
-    <div id="clientes" class="clientes">
+    <div id="clientes" class="clientes pagina">
         <div class="logos-clientes">
-            <img src="/assets/Sabara.jpg" alt="" class="botao-clientes">
-            <img src="/assets/Aeasp.jpg" alt=""  class="botao-clientes">
-            <img src="/assets/Diniz.jpg" alt="" class="botao-clientes">
-            <img src="/assets/Armavale.jpg" alt=""  class="botao-clientes">
-            <img src="/assets/Confidence.jpg" alt=""  class="botao-clientes">
-            <img src="/assets/DFcasa.jpg" alt=""  class="botao-clientes">
-            <img src="/assets/iSnow.jpg" alt=""  class="botao-clientes">
-            <img src="/assets/Promocional.jpg" alt="" id="Promocional" class="botao-clientes">
-            <img src="/assets/USP.png" alt="" id="USP" class="botao-clientes">
+           <a href="https://www.hospitalinfantilsabara.org.br/" target="_blank"> <img src="/assets/Sabara.jpg" alt="Sabara" class="botao-clientes"></a> 
+           <a href="https://eletricitarios.org.br/" target="_blank"> <img src="/assets/Aeasp.jpg" alt="Aeasp"  class="botao-clientes"></a> 
+           <a href="https://www.oticasdiniz.com.br/" target="_blank"> <img src="/assets/Diniz.jpg" alt="Diniz" class="botao-clientes"></a> 
+           <a href="https://buenogrupo.com.br/armazenagem.html" target="_blank"><img src="/assets/Armavale.jpg" alt=""  class="botao-clientes"></a>
+            <a href="https://www.confidencecambio.com.br/" target="_blank"><img src="/assets/Confidence.jpg" alt="Confidence"  class="botao-clientes"></a>
+            <a href="https://www.dfcasaimoveis.com.br/" target="_blank"><img src="/assets/DFcasa.jpg" alt="DFcasa"  class="botao-clientes"></a>
+            <a href="https://isnow.com.br/" target="_blank"><img src="/assets/iSnow.jpg" alt="iSnow"  class="botao-clientes"></a>
+            <a href="http://www.usp.br/bioterio/" target="_blank"><img src="/assets/USP.png" alt="USP" id="USP" class="botao-clientes"></a>
         </div>
     </div>
 
 
 
-    <div id="contato" class="contato">
+    <div id="contato" class="contato pagina">
         <div class="Form-Contato">
             <h1 id="Titulo-form">Contate-nos</h1>
             <form id="Form" action="">

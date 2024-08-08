@@ -23,7 +23,10 @@ ul{
 
 
 .cabecalho{
+    position: fixed;
+    width: 100%;
     background-color: #2e2e2ecc;
+    z-index: 1000;
 }
 
 .menu{
@@ -31,7 +34,11 @@ ul{
     width: var(--menu-size);
     height: 100%;
     top: 0;
+    left: 0;
     background-color: #2e2e2e;
+    z-index: 1000;
+    margin-left: -var(--menu-size);
+    transition: margin-left 0.4s ease;
 }
 .menu ul{
     display: flex;
@@ -43,6 +50,8 @@ ul{
 
 .menu ul li{
     display: block;
+    padding-top: 10px;
+    margin: px;
 }
 
 .menu ul li a{
@@ -57,14 +66,15 @@ ul{
 }
 
 #botao-fechar{
-    background-color: #000000;
-    color: #fff;
+    width: 23px;
     font-weight: bold;
     font-size: 20px;
     float: right;
+    margin: 10px;
 }
 
-#botao-fechar:active{
+#botao-fechar:hover{
+    cursor: pointer;
     background-color: #ff0000;
 }
 
@@ -169,7 +179,7 @@ ul{
 }
 
 .botao-servicos:hover{
-    background-color: #fff;
+    background-color: #cacaca;
 }
 
 
