@@ -16,7 +16,7 @@ document.querySelector("#botao-fechar").addEventListener ('click', e=>{
 })
 
 function abrirModal(carregarModal){
-
+alert("Funcionado corretamente")
 }
 
 function fecharModal(fecharModal){

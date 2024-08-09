@@ -4,6 +4,22 @@
     --menu-size: 250px;
 }
 
+::-webkit-scrollbar {  
+    width: 15px; /* largura da scrollbar */  
+}  
+
+::-webkit-scrollbar-track {  
+    background: #000000ce; /* cor do fundo da scrollbar */  
+}  
+
+::-webkit-scrollbar-thumb {  
+    background: #528cf7e0; /* cor da parte que pode ser arrastada */  
+}  
+
+::-webkit-scrollbar-thumb:hover {  
+    background: #ffffff; /* cor ao passar o mouse */  
+}  
+
 *{
     margin: 0;
     font-size: 18px;
@@ -51,7 +67,6 @@ ul{
 .menu ul li{
     display: block;
     padding-top: 10px;
-    margin: px;
 }
 
 .menu ul li a{
@@ -268,12 +283,21 @@ ul{
     cursor: pointer;
 }
 
-#Promocional{
-    margin: 5px 50px;
+#TRB{
+    margin: 20px 10px;
+}
+
+#Sesi{
+    margin: 5px 30px;
+}
+
+#iSnow{
+    margin: 20px;
 }
 
 #USP{
-    margin: 5px 25px;  
+    width: 250px;
+    margin: 10px 15px;  
     background: #ffffff;
     border-radius: 5px;
 }
