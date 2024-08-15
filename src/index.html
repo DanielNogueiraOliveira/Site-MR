@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>MR Informatica</title>
+    <title>MR Rualonga</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preload" href="./style.css" as="style">
     <link rel="preload" href="./index.js" as="script">
@@ -65,32 +65,46 @@
   <div id="servicos" class="servicos pagina">
     <div>
         <img id="Telefonia" src="/assets/Telefonia.jpg" alt="Telefonia">
-        <input type="button" id="Botao-telefonia" class="botao-servicos" value="Telefonia" onclick="abrirModal('vis-modal-1')">
-        
-        
-        
+        <button id="Botao-telefonia" class="botao-servicos" value="Telefonia">Telefonia </button>
+        <dialog>
+            <img src="/assets/Folheto_MR_Telefonia.jpg" alt="esquema de Telefonia" id="Folheto-Telefonia" class="Modal">
+        </dialog>
     </div>
     <div>
         <img id="Voip" src="/assets/Voip.jpg" alt="">
-        <input type="button" id="Botao-voip" class="botao-servicos" value="Voip" onclick="abrirModal('vis-modal-2')">
-    
+        <button id="Botao-voip" class="botao-servicos" value="Voip" >Voip</button>
+        <dialog>
+            <img src="/assets/Esquema-do-voip.PNG" alt="esquema de Voip" id="Folheto-Voip" class="Modal">
+        </dialog>
     </div>
     <div>
         <img id="Controle-de-acesso" src="/assets/Controle-de-acesso.jpg" alt="">
-        <input type="button" id="Botao-controle" class="botao-servicos" value="Controle-de-acesso" onclick="abrirModal('vis-modal-2')">
+        <button id="Botao-controle" class="botao-servicos" value="Controle de acesso">Controle de acesso</button>
+        <dialog>
+            <img src="/assets/Folheto_MR_Linear_Biometria1.jpg" alt="esquema de Controle de acesso" id="Folheto-Biometria" class="Modal">
+        </dialog>
     </div>
     <div>
         <img id="CFTV" src="/assets/CFTV.jpg" alt="">
-        <input type="button" id="Botao-cftv" class="botao-servicos" value="CFTV" onclick="abrirModal('vis-modal-3')">
+        <button id="Botao-cftv" class="botao-servicos" value="CFTV">CFTV</button>
+        <dialog>
+            <img src="/assets/propaganda_segurança1-ts1583616675.jpg" alt="esquema de CFTV" id="Folheto-CFTV" class="Modal">
+        </dialog>
     </div>
     <div>
         <img id="Rede" src="/assets/Rede.jpg" alt="">
-        <input type="button" id="Botao-rede" class="botao-servicos" value="Rede" onclick="abrirModal('vis-modal-4')">
+        <button id="Botao-rede" class="botao-servicos" value="Cabeamento Estruturado">Rede</button>
+        <dialog>
+            <img src="/assets/Folheto_MR_Cabeamento_Estruturado.jpg" alt="esquema de Rede" id="Folheto-Rede" class="Modal">
+        </dialog>
 
     </div>
     <div>
         <img id="Help-desk" src="/assets/Help-desk-service.jpg" alt="">
-        <input type="button" id="Botao-help" class="botao-servicos" value="Help-desk" onclick="abrirModal('vis-modal-5')">
+        <button id="Botao-helpdesK" class="botao-servicos" value="HelpDesk">HelpDesk</button>
+        <dialog>
+            <img src="/assets/Folheto_Helpdesk.png" alt="esquema de HelpDesk" id="Folheto-HelpDesk" class="Modal">
+        </dialog>
     </div>
     </div>
 
@@ -101,9 +115,12 @@
            <a href="https://eletricitarios.org.br/" target="_blank"> <img src="/assets/Aeasp.jpg" alt="Aeasp"  class="botao-clientes"></a> 
            <a href="https://www.oticasdiniz.com.br/" target="_blank"> <img src="/assets/Diniz.jpg" alt="Diniz" class="botao-clientes"></a> 
            <a href="https://trb.log.br/" target="_blank"><img src="/assets/TRB.png" alt="TRB" id="TRB" class="botao-clientes"></a>
-            <a href="https://www.confidencecambio.com.br/" target="_blank"><img src="/assets/Confidence.jpg" alt="Confidence"  class="botao-clientes"></a>
-            <a href="https://www.dfcasaimoveis.com.br/" target="_blank"><img src="/assets/DFcasa.jpg" alt="DFcasa"  class="botao-clientes"></a>
+            <a href="https://www.confidencecambio.com.br/" target="_blank"><img src="/assets/Confidence.jpg" alt="Confidence" id="Confidence" class="botao-clientes"></a>
+            <a href="https://www.dfcasaimoveis.com.br/" target="_blank"><img src="/assets/DFcasa.jpg" alt="DFcasa" id="DFcasa"  class="botao-clientes"></a>
             <a href="https://isnow.com.br/" target="_blank"><img src="/assets/iSnow.jpg" alt="iSnow" id="iSnow" class="botao-clientes"></a>
+            <a href="http://mklogistica.com/" target="_blank"><img src="/assets/Mk.png" alt="Sesi" id="Mk" class="botao-clientes"></a>
+            <a href="https://mas-tin.com/" target="_blank"><img src="/assets/Mas-tin.png" alt="Mas-tin" id="Mas-tin" class="botao-clientes"></a>
+            <a href="http://www.usp.br/bioterio/" target="_blank"><img src="/assets/USP-1.png" alt="USP-1" id="USP-1" class="botao-clientes"></a>
             <a href="https://ww3.icb.usp.br/biomedicas-ii/" target="_blank"><img src="/assets/USP.png" alt="USP" id="USP" class="botao-clientes"></a>
             <a href="https://www.sesisp.org.br/" target="_blank"><img src="/assets/download.png" alt="Sesi" id="Sesi" class="botao-clientes"></a>
         </div>
