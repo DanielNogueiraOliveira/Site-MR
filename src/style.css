@@ -185,10 +185,24 @@ ul{
 
 dialog{
     top: 60px;
+    margin: auto;
 }
 
 dialog::backdrop{
     background-color: #00000077;
+}
+
+.Modal{
+    display: flex;
+    width: 600px;
+}
+
+#Folheto-Biometria{
+    width: 500px;
+}
+
+#Folheto-HelpDesk{
+    width: 450px;
 }
 
 #Botao-telefonia{
