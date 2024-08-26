@@ -29,6 +29,7 @@ ul{
     z-index: 1000;
 }
 
+/* menu lateral*/
 .menu{
     position: fixed;
     width: var(--menu-size);
@@ -42,6 +43,7 @@ ul{
 }
 .menu ul{
     display: flex;
+    margin-top: 16px;
     flex-direction: column;
     align-items: center;
     list-style: none;
@@ -50,7 +52,7 @@ ul{
 
 .menu ul li{
     display: block;
-    padding-top: 10px;
+    margin: 20px;
 }
 
 .menu ul li a{
@@ -64,6 +66,7 @@ ul{
     color: #000000;
 }
 
+/* Fechar menu lateral*/
 #botao-fechar{
     width: 23px;
     font-weight: bold;
@@ -77,6 +80,9 @@ ul{
     background-color: #ff0000;
 }
 
+
+
+/* abrir menu lateral*/
 .hambuguer{
     position: fixed;
 
@@ -90,6 +96,7 @@ ul{
     transition: magin .4s;
 }
 
+/* logo central do cabeçalho*/
 .logo{ 
     display: block;
     padding-top: 7px;
@@ -107,6 +114,7 @@ ul{
     
 }
 
+/* Pagina 1*/
 .inicio{
     display: flex;
     position: relative;
@@ -125,6 +133,7 @@ ul{
     border-radius: 10px;
 }
 
+/* Pagina 2*/
 .sobre{
     position: relative;
     display: flex;
@@ -148,6 +157,7 @@ ul{
     font-size: 25px;
 }
 
+/* Pagina 3*/
 .servicos{
     padding-top: 200px;
     display: grid;
@@ -184,8 +194,10 @@ ul{
 }
 
 dialog{
-    top: 60px;
+    top: 35px;
     margin: auto;
+    border: none;
+    padding: 5px;
 }
 
 dialog::backdrop{
@@ -195,6 +207,10 @@ dialog::backdrop{
 .Modal{
     display: flex;
     width: 600px;
+}
+
+#Folheto-Voip{
+    width: 500px;
 }
 
 #Folheto-Biometria{
@@ -269,6 +285,7 @@ dialog::backdrop{
     height: 250px;
 }
 
+/* Pagina 4*/
 .clientes{
     position: relative;
     padding-top: 200px;
@@ -358,6 +375,127 @@ dialog::backdrop{
    width: 400px;
 }
 
+/* Pagina 5*/
 .botao-contato{
   margin-left: 490px;
+}
+
+/*reponsividade*/
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        position: relative;
+        height: auto;
+        padding: 10px;
+        width: 100%; /* Ocupa 100% da largura */
+    }
+
+    .logo {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #logo {
+        height: 40px;
+    }
+
+    .hambuguer {
+        height: 40px;
+    }
+
+    /* Ajuste do vídeo */
+    #video {
+        width: 90%;
+        height: auto;
+        padding-top: 80px;
+        margin: auto; /* Centralizar o vídeo */
+    }
+
+    /* Ajuste da seção sobre */
+    .sobre p {
+        font-size: 18px;
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    /* Ajuste dos serviços */
+    .servicos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 100%; /* Garante que ocupe 100% da largura */
+    }
+
+    .botao-servicos {
+        bottom: 120px;
+        width: 100%;
+    }
+
+    #Telefonia, #Voip, #Controle-de-acesso, #CFTV, #Rede, #Help-desk {
+        width: 90%;
+        height: auto;
+        margin: 20px auto; /* Centralizar e evitar que ultrapassem a largura */
+    }
+
+    /* Ajuste da seção clientes */
+    .clientes {
+        padding: 20px;
+        width: 100%; /* Garante que ocupe 100% da largura */
+    }
+
+    .logos-clientes {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .botao-clientes {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* Formulário de contato */
+    #Titulo-form {
+        margin: 20px auto;
+        font-size: 40px;
+    }
+
+    .input-form {
+        width: 100%;
+    }
+
+    .botao-contato {
+        margin: 20px auto;
+        display: block;
+        width: auto;
+    }
+}
+
+/* Para telas maiores que 1112px */
+@media screen and (min-width: 1112px) {
+    .cabecalho {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    #logo {
+        padding-left: 650px;
+        height: 50px;
+    }
+
+    .servicos {
+        grid-template-columns: 220px 390px 200px;
+        grid-auto-rows: 280px;
+        width: 100%;
+    }
+
+    .clientes {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .botao-contato {
+        margin-left: 490px;
+    }
 }

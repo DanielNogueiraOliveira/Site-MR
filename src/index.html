@@ -10,6 +10,8 @@
   
 </head>
 <body>
+
+    <!--Cabeçalho-->
     <header class="cabecalho">
         <div class="menu-logo">
             
@@ -23,10 +25,11 @@
         </div>
         
     </header>
+
+    <!--menu lateral dinamico-->
     <div id="menu" class="menu effect">
-        <nav class="botoes-menu" > <!---->
-            <!---colocar a função de navegação nas opções do menu-->
-           <label for=""><img id="botao-fechar" src="../assets/x.png" alt="Fechar"></label>
+        <label for=""><img id="botao-fechar" src="../assets/x.png" alt="Fechar"></label>
+        <nav class="botoes-menu" > 
             <ul>
                 <li><a class="links-menu" href="#inicio">Inicio</a></li>
                 <li><a class="links-menu" href="#sobre">Sobre</a></li>
@@ -38,6 +41,8 @@
     </div>
     
 <div class="corpo-site">
+
+    <!--Tela de inicio-->
         <div id="inicio" class="inicio pagina">
             
             <iframe src="https://www.youtube.com/embed/fgDxQ_WCXqA?si=OOQfglcOhZMvSwLy" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -49,6 +54,8 @@
         
 <div></div>
    
+
+    <!--Tela Sobre-->
     <div id="sobre" class="sobre pagina"> 
         <p>A MR Rualonga é uma empresa no segmento de Tecnologia, Informática e Telefonia,
             Atua na prestação de serviços, venda de suprimentos e equipamentos para soluções
@@ -60,8 +67,8 @@
             parceiros, agregando inteligência, competitividade e qualidade aos negócios.
             Certamente atenderá as necessidades de comunicação de sua empresa.</p>
     </div>
-    <!--Colocar as telas com as informações dos serviços da MR-->
-
+    
+    <!--Tela de serviço-->
   <div id="servicos" class="servicos pagina">
     <div>
         <img id="Telefonia" src="/assets/Telefonia.jpg" alt="Telefonia">
@@ -74,7 +81,7 @@
         <img id="Voip" src="/assets/Voip.jpg" alt="">
         <button id="Botao-voip" class="botao-servicos" value="Voip" >Voip</button>
         <dialog>
-            <img src="/assets/Esquema-do-voip.PNG" alt="esquema de Voip" id="Folheto-Voip" class="Modal">
+            <img src="/assets/Folheto_Voip.PNG" alt="esquema de Voip" id="Folheto-Voip" class="Modal">
         </dialog>
     </div>
     <div>
@@ -108,7 +115,7 @@
     </div>
     </div>
 
-
+    <!--Tela de Clientes-->
     <div id="clientes" class="clientes pagina">
         <div class="logos-clientes">
            <a href="https://www.hospitalinfantilsabara.org.br/" target="_blank"> <img src="/assets/Sabara.jpg" alt="Sabara" class="botao-clientes"></a> 
@@ -127,7 +134,7 @@
     </div>
 
 
-
+    <!--Contato-->
     <div id="contato" class="contato pagina">
         <div class="Form-Contato">
             <h1 id="Titulo-form">Contate-nos</h1>
@@ -145,7 +152,7 @@
                             <th class="titulos-input">E-mail&nbsp;&nbsp;</th>
                             <td>
                                 <input type="hidden" name="wb_input_1" value="E-mail">
-                                <input type="email" class="input-form" value name="wb_input_1" required>
+                                <input type="email" id="Email" class="input-form" value name="wb_input_1" required>
                             </td></tr>
                         <tr>
                             <th class="titulos-input">Mensagem&nbsp;&nbsp;</th>
