@@ -13,7 +13,7 @@
 
 body{
     overflow-x: hidden;
-    background-image: url(../assets/Backgrund-2.jpg) ;
+    background-image: url(./assets/Backgrund-2.jpg) ;
     background-size: contain;
 }
 
@@ -170,7 +170,7 @@ ul{
     min-height: 100vh;
     grid-template-columns: 220px 390px 200px;
     grid-auto-rows: 280px;
-    background-image: url(../assets/Backgrund-3.jpg) ;
+    background-image: url(./assets/Backgrund-3.jpg) ;
     background-size: cover;
     
 }
@@ -289,6 +289,7 @@ dialog::backdrop{
 .clientes{
     position: relative;
     padding-top: 200px;
+    padding-bottom: 200px;
     width: 100%;
     top: 390px;
     min-height: 140vh;
@@ -385,12 +386,10 @@ dialog::backdrop{
     .cabecalho {
         position: relative;
         height: auto;
-        padding: 10px;
-        width: 100%; /* Ocupa 100% da largura */
     }
 
     .logo {
-        padding-left: 0;
+        padding-left: auto;
         text-align: center;
     }
 
@@ -404,10 +403,9 @@ dialog::backdrop{
 
     /* Ajuste do vídeo */
     #video {
-        width: 90%;
+        width: 70%;
         height: auto;
-        padding-top: 80px;
-        margin: auto; /* Centralizar o vídeo */
+        padding-right: 50px;
     }
 
     /* Ajuste da seção sobre */
@@ -430,11 +428,11 @@ dialog::backdrop{
         width: 100%;
     }
 
-    #Telefonia, #Voip, #Controle-de-acesso, #CFTV, #Rede, #Help-desk {
-        width: 90%;
-        height: auto;
-        margin: 20px auto; /* Centralizar e evitar que ultrapassem a largura */
+    .Modal{
+        width: 50px;
+        
     }
+    
 
     /* Ajuste da seção clientes */
     .clientes {

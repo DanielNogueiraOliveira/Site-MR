@@ -1,0 +1,23 @@
+{
+  "name": "site-mr",
+  "version": "1.0.0",
+  "description": "Site de aprentação dos serviços da empresa em que eu trabalho.\r   Desenvolvi este site para apresentar os serviços que a empresa que estou trabalhando oferece, la também apresento as empresas que nos prestamos serviços",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+      "lang": "pt",
+      "Console/Mode": "collapse"
+    
+  }
+}
