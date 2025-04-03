@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root{
-    --menu-size: 250px;
-}
 
 *{
     margin: 0;
@@ -11,11 +8,56 @@
     outline: 0;
 }
 
-ul{
-    padding-inline-start: 0;
+body{
+    background-image: url(./assets/Background.jpeg);
+    width: 100%;
+    background-size: cover;
+
 }
 
-.background{
-    background-image: url(./assets/background.jpg);
-    background-size: contain;
+
+
+#logo{
+    position: absolute;
+    top: 3px;
+    display: flex;
+    left: 10px;
+    width: 140px;
+    
+}
+
+#info{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    filter: invert(100%) brightness(1);
+}
+
+.container{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(75, 69, 95, 0.192);
+    background-position: fixed;
+    backdrop-filter: blur(5px);
+    display: flex;
+    top: 190px;
+    left: 470px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.botoes-paginas{
+   margin: 110px;
+
+}
+
+.icones-paginas{
+    width: 50px;
+    margin: 20px;
+    filter: invert(100%);
+}
+
+.rede{
+
 }
