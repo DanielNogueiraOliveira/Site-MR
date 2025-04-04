@@ -12,6 +12,16 @@
 .home{
     width: 100%;
     background-image: url(./img/background.png);
+    background-size: cover;
+    min-height: 739px;
+}
+
+.construindo{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/construindo.png);
+    background-size: 1500px;
+    background-position: 0px;
     min-height: 739px;
 }
 
@@ -54,4 +64,16 @@
     width: 50px;
     margin: 20px;
     filter: invert(100%);
+}
+
+.redes{
+    position: absolute;
+    top: 498px;
+    left: 630px;
+}
+
+.redes-socias{
+    width: 20px;
+    margin: 10px;
+    filter: invert();
 }
