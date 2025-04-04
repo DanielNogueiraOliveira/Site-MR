@@ -8,8 +8,8 @@
     outline: 0;
 }
 
-#background{
-    background-image: url(./img/background.png) ;
+body{
+    background-image: url(./img/background.png);
 }
 
 #logo{
