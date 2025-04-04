@@ -8,8 +8,11 @@
     outline: 0;
 }
 
+
 .home{
+    width: 100%;
     background-image: url(./img/background.png);
+    min-height: 739px;
 }
 
 #logo{
