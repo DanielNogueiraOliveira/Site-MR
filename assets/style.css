@@ -8,6 +8,10 @@
     outline: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 .background{
     width: 100%;
@@ -27,15 +31,21 @@
     color: #ff0000;
     background-color: #0000002a;
 }
+/*js*/
+.cabecalho{
+    background-color: #0000002a;
+}
 
-/*home*/
-.construindo{
-    width: 100%;
-    height: 100%;
-    background-image: url(./img/construindo.png);
-    background-size: 1500px;
-    background-position: 0px;
-    min-height: 739px;
+.x_info{
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.x_info:hover{
+    color: #ff0000;
+    background-color: #0000002a;
 }
 
 #logo{
@@ -53,6 +63,21 @@
     right: 10px;
     filter: invert(100%) brightness(1);
 }
+
+
+
+/*home*/
+.construindo{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/construindo.png);
+    background-size: 1500px;
+    background-position: 0px;
+    min-height: 739px;
+}
+
+
+
 
 .container{
     position: relative;
