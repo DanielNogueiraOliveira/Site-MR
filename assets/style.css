@@ -101,30 +101,44 @@ a{
 
 /*home*/
 
-.container{
-    position: relative;
-    width: 500px;
-    height: 300px;
-    background-color: rgba(75, 69, 95, 0.192);
-    background-position: fixed;
-    backdrop-filter: blur(5px);
+.botoes-paginas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
+  
+  .botoes-paginas a {
     display: flex;
-    top: 190px;
-    left: 470px;
+    flex-direction: column;
     align-items: center;
-    border-radius: 15px;
-}
-
-.botoes-paginas{
-   margin: 110px;
-
-}
-
-.icones-paginas{
+    box-sizing: border-box;
+    margin: 11px;
+    color: #fff; 
+  }
+  
+  .texto_icones {
+    margin-top: 7px;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+  
+  .icones-paginas {
     width: 50px;
-    margin: 20px;
     filter: invert(100%);
-}
+  }
+  
+ 
+  .container {
+    position: fixed; 
+    padding: 40px 0px;
+    background-color: rgba(75, 69, 95, 0.192);
+    backdrop-filter: blur(5px);
+    top: 190px; 
+    left: 460px;
+    border-radius: 15px;
+  }
+
 
 /*Botões das Redes sociais*/
 
