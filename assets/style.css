@@ -12,6 +12,7 @@ a{
     text-decoration: none;
 }
 
+/*Reutilizaveis das Paginas*/
 
 .background{
     width: 100%;
@@ -31,22 +32,8 @@ a{
     color: #ff0000;
     background-color: #0000002a;
 }
-/*js*/
-.cabecalho{
-    background-color: #0000002a;
-}
 
-.x_info{
-    position: fixed;
-    top: 8px;
-    right: 20px;
-    font-size: 20px;
-    color: #fff;
-}
-.x_info:hover{
-    color: #ff0000;
-    background-color: #0000002a;
-}
+/*js*/
 
 #logo{
     position: absolute;
@@ -59,14 +46,20 @@ a{
 
 #info{
     position: absolute;
-    top: 10px;
-    right: 10px;
-    filter: invert(100%) brightness(1);
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    filter: invert(100%);
+}
+
+#info:hover{
+    background-color: #00f7ff54;
+    border-radius: 50px;
 }
 
 
+/*Paginas em contrução*/
 
-/*home*/
 .construindo{
     width: 100%;
     height: 100%;
@@ -76,8 +69,37 @@ a{
     min-height: 739px;
 }
 
+/*Pagina sobre*/
+
+.sair_sobre{
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #ffffffc2;
+}
+
+.sair_sobre:hover{
+    color: #ff0000c4;
+}
+
+.text_sobre{
+    position: fixed;
+    width: 850px;
+    top: 200px;
+    left: 320px;
+    background-color: #00000048;
+    border-radius: 20px;
+}
+.text_sobre p{
+    font-size: 20px;
+    text-align: center;
+    margin: 35px 20px;
+    color: #fff;
+}
 
 
+/*home*/
 
 .container{
     position: relative;
@@ -103,6 +125,8 @@ a{
     margin: 20px;
     filter: invert(100%);
 }
+
+/*Botões das Redes sociais*/
 
 .redes{
     position: absolute;
