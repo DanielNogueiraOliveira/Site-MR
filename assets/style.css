@@ -222,7 +222,7 @@ a{
 /*Pagina Redes*/
 
 .fundo_rede{
-    background-color: rgba(148, 241, 248, 0.24);
+    background-color: rgba(99, 221, 252, 0.24);
 }
 
 
@@ -258,23 +258,53 @@ a{
 /* Pagina Helpdesk*/
 
 .fundo_helpdesk{
-    background-color: rgba(213, 184, 252, 0.24);
+    background-color: rgba(129, 107, 252, 0.288);
+}
+.fotos_helpdesk{
+    max-width: 350px;
 }
 
 
 /* Pagina Antivirus*/
 .fundo_seguranca{
-    background-color: rgba(137, 46, 255, 0.26);
+    background-color: rgba(153, 51, 248, 0.281);
 }
 
+.fotos_seguranca{
+    max-width: 320px;
+}
+
+#escudo-MR{
+    margin-left: 130px;
+}
 /* Pagina Controle de acesso*/
 
 .fundo_controle-acesso{
     background-color: rgba(151, 221, 118, 0.24);
 }
 
+.fotos_controle{
+    max-width: 310px;
+}
+
+#leitor-dedo{
+    margin-left: 30px;
+}
+
+#leitor-digital{
+    margin-left: 30px;
+}
+
 /* Pagina Telefonia*/
 
 .fundo_telefonia{
-    background-color: rgba(196, 226, 25, 0.253);
+    background-color: rgba(142, 236, 133, 0.5);
+}
+
+.fotos_telefonia{
+    max-width: 350px;
+}
+
+#Impacta{
+    margin-right: 20px;
 }
