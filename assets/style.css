@@ -29,6 +29,7 @@ a{
     align-items: center;
     border-radius: 5px;
 }
+
 .paginas-servicos{
     position: fixed;
     top: 30px;
@@ -226,26 +227,32 @@ a{
 
 
 .ilustracoes_rede{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.ilustracoes_rede img:nth-child(1),
-.ilustracoes_rede img:nth-child(2){
-    width: 100%;
-}
-
-.ilustracoes_rede:nth-child(n+3){
-    width: calc(50% - 10px);
-    margin-top: 10px;
-}
-
-.ilustracoes_rede:nth-child(odd):nth-child(n+3){
-    margin-right: 20px;
-}
 
 .fotos_rede{
-    
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+#cabos-coloridos{
+    width: 200px;
+    margin-left: 80px;
+}
+
+#patch_fibra{
+    width: 300px;
+        margin-left: 5px;
+}
+
+#switch{
+   
+}
+
+#servidores{
+    width: 300px;
 }
 
 /* Pagina Helpdesk*/
