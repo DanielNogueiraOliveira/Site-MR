@@ -54,7 +54,7 @@ a{
 /*js*/
 
 #logo{
-    position: absolute;
+    position: fixed;
     top: 3px;
     display: flex;
     left: 10px;
@@ -63,7 +63,7 @@ a{
 }
 
 #info{
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 15px;
     width: 40px;
@@ -108,6 +108,7 @@ a{
     left: 320px;
     background-color: #00000048;
     border-radius: 20px;
+    margin: auto;
 }
 .text_sobre p{
     font-size: 20px;
@@ -155,15 +156,17 @@ a{
     top: 190px; 
     left: 460px;
     border-radius: 15px;
+    margin: auto;
   }
 
 
 /*Botões das Redes sociais*/
 
 .redes{
-    position: absolute;
+    position: fixed;
     top: 498px;
     left: 630px;
+    margin: auto;
 }
 
 .redes-socias{
@@ -200,10 +203,6 @@ a{
     margin-bottom: 90px;
 }
 
-
-.fotos_cameras{
-
-}
 
 #camera_bolinha{
     margin-right: 50px;
@@ -321,4 +320,86 @@ a{
     width: 250px;
     margin-left: 50px;
     margin-bottom: -8px;
+}
+
+@media screen and (max-width: 1120px) {
+.text_sobre{
+    margin: auto;
+    width: auto;
+    left: 150px;
+    right: 165px;
+}
+.text_sobre p{
+    font-size: 16px;
+}
+.container{
+    left: 280px;
+    }
+.redes{
+    left: 480px;
+}
+
+ }
+
+@media screen and (max-width:830px) {
+    .text_sobre{
+        left: auto;
+        right: auto;
+        top: 185px;
+    }
+
+    .container{
+        left: 180px;
+        }
+    .redes{
+        left: 380px;
+    }
+    
+}
+
+@media screen and (max-width: 730px){
+    .text_sobre{
+        left: auto;
+        right: auto;
+    }
+    .text_sobre p{
+        font-family: 16px;
+    }
+    .container{
+        left: 125px;
+        }
+    .redes{
+        left: 310px;
+    }
+}
+
+@media screen and (max-width:488px) {
+    .text_sobre{
+        top: 180px;
+        left: 0px;
+    }
+    .text_sobre p{
+        font-family: 14px;
+    }
+    .container{
+        left: 0px;
+        }
+    .redes{
+        top: 520px;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:365px){
+    .text_sobre{
+        top: 140px;
+    }
+
+    .text_sobre p{
+        font-family: 10px;
+    }
+    .redes{
+        top: 530px;
+        left: 105px;
+    }
 }
