@@ -34,8 +34,8 @@ a{
     position: fixed;
     top: 30px;
     left: 220px;
-    width: 1100px;
-    text-align:center;
+    width: auto;
+    text-align: center;
     color: #fff;
 }
 
@@ -272,10 +272,19 @@ a{
 .fotos_seguranca{
     max-width: 320px;
 }
+#monitor-virus{
+    width: 200px;
+    filter: invert() brightness(1);
+}
 
 #escudo-MR{
     margin-left: 130px;
 }
+
+#no-bug{
+    width: 200px;
+}
+
 /* Pagina Controle de acesso*/
 
 .fundo_controle-acesso{
@@ -323,6 +332,11 @@ a{
 }
 
 @media screen and (max-width: 1120px) {
+
+.paginas-servicos{
+   left: 42px;
+}
+
 .text_sobre{
     margin: auto;
     width: auto;
