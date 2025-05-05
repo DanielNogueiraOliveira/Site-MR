@@ -274,7 +274,6 @@ a{
 }
 #monitor-virus{
     width: 200px;
-    filter: invert() brightness(1);
 }
 
 #escudo-MR{
