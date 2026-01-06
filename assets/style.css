@@ -18,6 +18,18 @@ a{
     background-image: url(./img/background.png);
     background-size: cover;
     min-height: 739px;
+    overflow: hidden;
+}
+.background-construcao{
+    background-image: url(./img/construindo.png);
+    background-size: cover;
+}
+#voltar-inicio{
+    position: fixed;
+    top: 300px;
+    font-size: 30px;
+    left: 500px;
+    color: #fff;
 }
 
 .fundo_paginas{
@@ -32,8 +44,7 @@ a{
 
 .paginas-servicos{
     position: fixed;
-    top: 30px;
-    left: 220px;
+    top: 100px;
     width: auto;
     text-align: center;
     color: #fff;
@@ -76,16 +87,6 @@ a{
 }
 
 
-/*Paginas em contrução*/
-
-.construindo{
-    width: 100%;
-    height: 100%;
-    background-image: url(./img/construindo.png);
-    background-size: 1500px;
-    background-position: 0px;
-    min-height: 739px;
-}
 
 /*Pagina sobre*/
 
@@ -116,7 +117,14 @@ a{
     margin: 35px 20px;
     color: #fff;
 }
-
+.texto_servicos{
+    width: 1400px;
+    margin-left: 20px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 /*home*/
 
@@ -163,8 +171,10 @@ a{
 /*Botões das Redes sociais*/
 
 .redes{
+    background-color: #00000054;
+    border-radius: 20px;
     position: fixed;
-    top: 498px;
+    top: 507px;
     left: 630px;
     margin: auto;
 }
@@ -186,7 +196,6 @@ a{
     background-color: rgba(238, 238, 238, 0.192);
     backdrop-filter: blur(5px);
     top: 89px;
-    align-items: center;
     border-radius: 5px;
 }
 
@@ -199,29 +208,42 @@ a{
     color: #fff;
 }
 
-.texto_servicos{
-    margin-bottom: 90px;
+.detalhes{
+    visibility: hidden;
+    margin-left: 200px;
+    color: #fff;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.paginas-servicos:hover .detalhes{
+    visibility: visible;
+    opacity: 1;
 }
 
 
 #camera_bolinha{
+    margin-left: 236px;
     margin-right: 50px;
-    width: 190px;
+    width: 270px;
 }
 
 #DVR{
     margin-right: 50px;
-    width: 280px;
+    width: 380px;
 }
 
 #camera{
-    width: 200px;
+    width: 300px;
+}
+
+.selo_Intelbras{
+    margin-top: 280px;
+    width: 160px;
 }
 
 /*Pagina Redes*/
 
 .fundo_rede{
-    background-color: rgba(99, 221, 252, 0.24);
+    background-color: rgba(89, 250, 223, 0.24);
 }
 
 
@@ -230,37 +252,32 @@ a{
     grid-template-columns: repeat(3, 1fr);
 }
 
-
 .fotos_rede{
-    margin-top: 20px;
-    max-width: 400px;
-}
-
-#cabos-coloridos{
-    width: 200px;
-    margin-left: 80px;
+    margin-top: 50px;
+    
 }
 
 #patch_fibra{
-    width: 300px;
-        margin-left: 5px;
+    width: 400px;
+    margin-left: 80px;
 }
 
 #switch{
-   
+   width: 500px;
 }
 
 #servidores{
-    width: 300px;
+    width: 400px;
 }
 
 /* Pagina Helpdesk*/
 
 .fundo_helpdesk{
-    background-color: rgba(129, 107, 252, 0.288);
+    background-color: rgba(1, 68, 253, 0.288);
 }
 .fotos_helpdesk{
-    max-width: 350px;
+    max-width: 420px;
+    margin-left: 21px;
 }
 
 
@@ -268,32 +285,40 @@ a{
 .fundo_seguranca{
     background-color: rgba(153, 51, 248, 0.281);
 }
+.ilustracoes_seguranca{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
 
 .fotos_seguranca{
-    max-width: 320px;
+    max-width: 420px;
 }
-#monitor-virus{
-    width: 250px;
-    margin-bottom: 120px;
+#cadeado{
+    width: 350px;
+    margin-left: 120px;
 }
 
 #escudo-MR{
-    margin-left: 130px;
+    width: 290px; 
 }
 
 #no-bug{
-    width: 250px;
-    margin-bottom: 120px;
+    width: 295px;
 }
 
 /* Pagina Controle de acesso*/
 
 .fundo_controle-acesso{
-    background-color: rgba(151, 221, 118, 0.24);
+    background-color: rgba(16, 137, 194, 0.24);
 }
 
 .fotos_controle{
-    max-width: 310px;
+    max-width: 380px;
+}
+
+#leitor-facial{
+    margin-left: 140px;
 }
 
 #leitor-dedo{
@@ -307,22 +332,22 @@ a{
 /* Pagina Telefonia*/
 
 .fundo_telefonia{
-    background-color: rgba(142, 236, 133, 0.5);
+    background-color: rgba(200, 236, 133, 0.5);
 }
 
 .fotos_telefonia{
-    max-width: 450px;
+    max-width: 480px;
 }
 
 
 #Impacta{
+    margin-left: 140px;
     margin-bottom: 35px;
     margin-right: 30px;
-    margin-bottom: 59px;
 }
 
 #central-voip{
-    width: 290px;
+    width: 390px;
     margin-bottom: 120px;
 }
 
@@ -332,31 +357,106 @@ a{
     margin-bottom: -8px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1366px) {
+   
+   
+    /* Pagina sobre*/
+    .text_sobre{
+        margin: 10px;
+        width: auto;
+        left: 150px;
+        right: 165px;
+    }
+    
+    .text_sobre p{
+        font-size: 16px;
+    }
+/*----*/
+.fundo_paginas{
+    position: relative;
+}
+
+
+ /* Detalhes*/   
+.detalhes{
+ 
+}
 
 .paginas-servicos{
-   left: 42px;
+position: relative;
 }
 
-.text_sobre{
-    margin: auto;
+
+.texto_servicos{
+    margin: 30px;
     width: auto;
-    left: 150px;
-    right: 165px;
-}
-.text_sobre p{
-    font-size: 16px;
-}
-.container{
-    left: 280px;
-    }
-.redes{
-    left: 480px;
+    
 }
 
+
+.container{
+    left: 385px;
+    }
+
+
+.redes{
+    left: 575px;
+}
+
+/*Pagina cameras*/
+
+#camera_bolinha{
+    margin-left: 0;
+    width: 200px;
+}
+
+#camera {
+    width: 200px;
+}
+
+#DVR{
+    width: 200px;
+}
+
+.selo_Intelbras{
+    margin-top: 195px;
+    margin-left: 1100px;
+}
+
+
+/*Redes*/
+.ilustracoes_rede{
+display: flex;
+flex-wrap: wrap;
+}
+
+#patch_fibra{
+    margin-left: 0;
+    width: 280px;
+}
+
+#switch{
+    display: none;
+}
+
+#servidores{
+    width: 300px;
+}
+
+/*helpdesk*/
+
+#note-help{
+    margin-left: 0;
+    width: 360px;
+}
+#leitor-digital{
+    
+}
  }
 
-@media screen and (max-width:830px) {
+
+
+@media screen and (max-width:932px) {
     .text_sobre{
         left: auto;
         right: auto;
@@ -372,23 +472,7 @@ a{
     
 }
 
-@media screen and (max-width: 730px){
-    .text_sobre{
-        left: auto;
-        right: auto;
-    }
-    .text_sobre p{
-        font-family: 16px;
-    }
-    .container{
-        left: 125px;
-        }
-    .redes{
-        left: 310px;
-    }
-}
-
-@media screen and (max-width:488px) {
+@media screen and (max-width:667px) {
     .text_sobre{
         top: 180px;
         left: 0px;
@@ -403,18 +487,8 @@ a{
         top: 520px;
         left: 150px;
     }
+    .selo_Intelbras{
+    width: 120px;
+    margin-top: 40px;
 }
-
-@media screen and (max-width:365px){
-    .text_sobre{
-        top: 140px;
-    }
-
-    .text_sobre p{
-        font-family: 10px;
-    }
-    .redes{
-        top: 530px;
-        left: 105px;
-    }
 }
